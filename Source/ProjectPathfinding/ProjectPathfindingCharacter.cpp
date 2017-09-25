@@ -15,12 +15,14 @@ AProjectPathfindingCharacter::AProjectPathfindingCharacter()
 {
 	// Set size for player capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
+	GetSimpleCollisionCylinder;
+	
 
 	// Don't rotate character to camera direction
 	bUseControllerRotationPitch = false;
 	bUseControllerRotationYaw = false;
 	bUseControllerRotationRoll = false;
-
+	
 	// Configure character movement
 	GetCharacterMovement()->bOrientRotationToMovement = true; // Rotate character to moving direction
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 640.f, 0.f);
@@ -59,6 +61,11 @@ AProjectPathfindingCharacter::AProjectPathfindingCharacter()
 void AProjectPathfindingCharacter::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
+
+	
+	
+
+   
 
 	if (CursorToWorld != nullptr)
 	{
