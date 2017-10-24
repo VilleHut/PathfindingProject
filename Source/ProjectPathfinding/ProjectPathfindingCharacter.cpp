@@ -15,7 +15,7 @@ AProjectPathfindingCharacter::AProjectPathfindingCharacter()
 {
 	// Set size for player capsule
 	GetCapsuleComponent()->InitCapsuleSize(42.f, 96.0f);
-	GetSimpleCollisionCylinder;
+	
 	
 
 	// Don't rotate character to camera direction
